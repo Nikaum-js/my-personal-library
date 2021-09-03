@@ -1,0 +1,215 @@
+.container-login {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 9rem;
+  margin-left: 5rem;
+  margin-top: 5rem;
+
+  figure {
+    margin-bottom: 2rem;
+    width: 600px;
+    height: 600px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      animation: slide 15s infinite linear;
+    }
+  }
+
+  #pass {
+    padding-right: 20px;
+    position: relative;
+    fill: #a8a8b3;
+  }
+  
+  .olho {
+    cursor: pointer;
+    left: 360px;
+    bottom: 50px;
+    position: absolute;
+    width: 20px;
+    fill: #4d4d52;
+  }
+
+  section {
+    background: var(--gray-900);
+    margin-right: 4rem;
+    margin-top: 1.8rem;
+    
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 1.1rem;
+        margin-left: 3.5rem;
+        color: var(--text-title);
+      }
+
+      .email {
+        position: relative;
+      }
+      
+      #email {
+        top: 25px;
+        height: 30px;
+        right: 30px;
+        left: 67px;
+        position: absolute;
+        fill: #a8a8b3;
+      }
+
+      .password {
+        position: relative;
+      }
+
+      #forgotPassword {
+        cursor: pointer;
+        position: absolute;
+        top: 80px;
+        left: 280px;
+        color: #9793AE;
+        font-size: 0.75rem;
+      }
+      
+      #password {
+        top: 25px;
+        height: 30px;
+        right: 30px;
+        left: 67px;
+        position: absolute;
+        fill: #a8a8b3;
+      }
+
+      input {
+        outline: none;
+        padding: 0.25rem;
+        border-radius: 1rem;
+        border: 0;
+        margin: .85rem;
+        width: 350px;
+        padding: 18px;
+        padding-left: 48px;
+        margin-bottom: 2rem;
+        margin-left: 3rem;
+        color: #2d2d2e;
+
+        &::placeholder {
+          color: #a8a8b3;
+          margin-right: 10rem;
+        }
+      }
+    }
+
+    h1 {
+      color: var(--text-title);
+      font-size: 3rem;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    button {
+      margin-left: 5.9rem;
+      width: 260px;
+      height: 50px;
+      // margin-left: 3rem;
+      margin-top: 1.5rem;
+
+      border: 0;
+      border-radius: .5rem;
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      transition: all .4s;
+
+      font-weight: 500;
+      color: white;
+      font-size: 1.3rem;
+      transition: 0.3s;
+    }
+  
+    button:hover {
+      filter: brightness(0.9);
+      background: linear-gradient(to right, #ff4b2b, #ff416c);
+    }
+
+    span {
+      cursor: pointer;
+      position: relative;
+      top: 60px;
+      left: 130px;
+      color: var(--text-primary);
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .login-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-login {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .login-container section form #email {
+    font-size: 15px;
+    top: 20px;
+    height: 30px;
+    right: 30px;
+    left: 55px;
+    position: absolute;
+    fill: #a8a8b3;
+  }
+
+  .login-container section form #password {
+    font-size: 15px;
+    top: 20px;
+    height: 30px;
+    right: 30px;
+    left: 55px;
+    position: absolute;
+    fill: #a8a8b3;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 9rem;
+    margin-left: 10rem;
+    margin-bottom: 8rem;
+    margin-top: 7rem;
+  
+    #pass {
+      padding-right: 20px;
+      position: relative;
+    }
+    
+    .olho {
+      cursor: pointer;
+      left: 350px;
+      bottom: 40px;
+      position: absolute;
+      width: 20px;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
