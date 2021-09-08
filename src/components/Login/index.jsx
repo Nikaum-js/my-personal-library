@@ -7,6 +7,7 @@ import ImagemLogin from '../../assets/Img_login.svg';
 import './styles.scss';
 
 export function Login() {
+  
   function handleViewPassword() {
     document.getElementById('olho').addEventListener('mousedown', function() {
       document.getElementById('pass').type = 'text';
